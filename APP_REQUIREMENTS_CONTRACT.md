@@ -1,4 +1,4 @@
-# Read Chinese With Sino-Vietnamese - Product Requirements Contract (v0.3)
+# Read Chinese With Sino-Vietnamese - Product Requirements Contract (v0.4)
 
 ## 1) Purpose
 
@@ -83,8 +83,8 @@ As a reader, I want to double-click a word/phrase, then click `Look up` to get l
 ### Required Behavior
 
 - Double-clicking text MUST create a selection.
-- After selection, the app MUST show a `Look up` button near the selection or in the lookup panel, and highlight the selected text in yellow.
-- Lookup MUST execute when user clicks `Look up` (not immediately on double-click).
+- After selection, the app MUST show a `Look up` button near the selection or in the lookup panel.
+- Lookup MUST execute when user clicks `Look up`. On that same click, the app MUST apply the yellow highlight to the selected text.
 - **Automatic target selection strategy:** depends on chosen dictionary source in design phase; prefer a source/provider that already supports tokenization for robust default candidate selection.
 
 ### Response Contract on Selection
@@ -98,7 +98,7 @@ The result panel MUST provide:
 
 ### UX Timing Contract
 
-- Highlight and `Look up` button visibility SHOULD appear immediately after double-click.
+- `Look up` button visibility SHOULD appear immediately after double-click. Yellow highlight SHOULD appear immediately when the user clicks `Look up` (same moment lookup is triggered).
 - Lookup response SHOULD feel immediate for local cache hits.
 - For non-cached lookups, app MUST show loading state and eventual success/failure state.
 
