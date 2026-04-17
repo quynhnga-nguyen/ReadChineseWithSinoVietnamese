@@ -210,13 +210,3 @@ Lookup may use storage mainly for optional cache; document and vocabulary data a
 - `Performance`: immediate UI response on selection and `Look up` button visibility; yellow highlight on `Look up` click; loading states for uncached lookup.
 - `Observability` (optional in MVP): basic request/error logging without sensitive data leakage.
 
-## 7) Suggested MVP Boundary (What to Build First)
-
-- End-to-end vertical slice:
-  - login,
-  - import document,
-  - open existing document,
-  - read + lookup via explicit button,
-  - add/remove New Word List entries with dedupe behavior.
-
-This boundary is sufficient to satisfy MVP acceptance criteria and provides a clean base for future features.
